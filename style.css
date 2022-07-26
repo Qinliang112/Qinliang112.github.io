@@ -1,0 +1,14 @@
+@charset "utf-8" ;
+
+
+
+html {
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    text-align: center;
+    font-size: 40px;
+}
+
