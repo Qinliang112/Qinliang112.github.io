@@ -262,17 +262,21 @@ body {
 }
 
 .loader {
+    background-color: #191F26;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    user-select: none;
+}
+
+.loader img {
     margin: 0 auto;
     position: absolute; 
     left: 50%; 
     top: 35%;
     margin-left: -60px;
     margin-top: -20px;
-}
-
-.loader img {
-    margin: 0 auto;
-    display: block;
 }
 
 
