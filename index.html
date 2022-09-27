@@ -15,18 +15,6 @@
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <title>Home Page</title>
-    
-        <script>
-            hide(document.querySelectorAll('#main'));
-            hide(document.querySelectorAll('#mobile-bar'))
-
-            window.addEventListener('load', (event) => {
-                hide(document.querySelectorAll('.loader'))
-                show(document.querySelectorAll('#main'));
-                show(document.querySelectorAll('#mobile-bar'));
-              });
-              
-        </script>
 
 </head>
 
@@ -108,7 +96,17 @@
         <!-- header for mobile phone (menu icon will appear, top nav is hidden)  -->
 
 
+        <script>
+            hide(document.querySelectorAll('#main'));
+            hide(document.querySelectorAll('#mobile-bar'))
 
+            window.addEventListener('load', (event) => {
+                hide(document.querySelectorAll('.loader'))
+                show(document.querySelectorAll('#main'));
+                show(document.querySelectorAll('#mobile-bar'));
+              });
+              
+        </script>
 
 
 
@@ -328,8 +326,7 @@
     
         </footer>
     </div>
-    
- 
+   
 
 </body>
 </html>
