@@ -331,3 +331,40 @@ footer {
     font-size: 1.2em;
     text-decoration: underline;
  }
+
+
+
+ @media only screen and (max-width: 400px) {
+    footer {
+        position: static;
+    }
+
+    .foot-top-img {
+        position: static;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        width: 60%;
+    }
+
+    .foot-top-img img {
+        width: 100%;
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    .foot-top-text {
+        width: 90%;
+    }
+
+    .foot-top-text ul li{
+        text-align: center;
+    }    
+
+    .foot-top-text ul li:first-child {
+        padding-top: 20px;
+        font-size: 1.2em;
+    }
+ }
