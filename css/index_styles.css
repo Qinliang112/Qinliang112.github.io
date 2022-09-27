@@ -340,6 +340,10 @@ html {
         width: 80%;
     }
 
+    .video-text h3 {
+        text-align: center;  
+    } 
+
     .store-column {
         width: 100%;
     }
