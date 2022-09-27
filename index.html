@@ -1,38 +1,351 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE >
+<html lang="en">
 <head>
-    <!--
-    
-    Starting Page 
-    Author: WONG QIN LIANG
-    Date:   22-JULY-2022
+    <meta charset="UTF-8" />
+    <meta name="description" content="A furniture web" />
+    <meta name="keywords" content="sofa, table, desk, home, furniture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link href="css/common_styles.css" rel="stylesheet" />
+    <link href="css/index_styles.css" rel="stylesheet" />
 
-    Filename: index.html
-   -->
+    <script src="javascript/script.js"></script>
+    <script defer src="javascript/index.js"></script>
 
-    <title>Furniture Web</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <meta charset=" utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/styles/style.css">
-
-    <script type=" text/javascript" src="/scripts/script.js"></script>
-    <script type=" text/javascript" src="/scripts/disable.js"></script>
+    <title>Home Page</title>
 
 </head>
 
-<body oncontextmenu="return false;">
-    <h1>Coming Soon!</h1>
-    <img src="/images/giphy.gif" alt="Waiting gif...." id="gif" width="430px" heigh="430px" />
+<body onresize="on_reload()" onload="on_ready()">
+
+<!------------------------ A loading image when the website is loading (hidden when page loaded all content)-------------------------->
+
+    <div class="loader"><img src="images/loader.gif"></div>
+
+<!------------------------ A loading image when the website is loading (hidden when page loaded all content)-------------------------->
+
+    
+
+<!------------------------ Mobile Side Bar  (hidden in desktop screen) -------------------------------------->
+
+    <div id="mobile-bar">
+        <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+        <a class="menu-pages-item menu-pages-locate">Home</a>
+        <a class="menu-pages-item menu-pages-select" href="html/services.html">Services</a>
+        <a class="menu-pages-item menu-pages-select" href="html/about_us.html">About</a>
+        <a class="menu-pages-item menu-pages-select" href="html/contact.html">Contact</a>
+    </div>
+
+<!------------------------ Mobile Side Bar  (hidden in desktop screen) -------------------------------------->
+
+
+
+<!-- ---------------------------------------------top bar------------------------------------------------------------------------- -->
+
+    <div id="main">
+
+        <!-- header for desktop  -->
+        <header class="head" id="desktop">
+            
+            <div class="logo">
+                <a href=""><img class="logo-image" src="images/logo.png" alt="logo"/></a>
+            </div>
+
+            <nav class="pages" id="pages">
+                <a id="home" class="directory directory-locate" href=""></a>
+                <a id="services" class="directory directory-link" href="html/services.html" target="_blank"></a>
+                <a id="about" class="directory directory-link" href="html/about_us.html" target="_blank"></a>
+                <a id="contact" class="directory directory-link" href="html/contact.html" target="_blank"></a>
+            </nav>
+
+            <div class="menu">
+                <a class="menu-icon" href="html/cart.html" target="_blank">
+                    <i class="icon icon-cart menu-icon-logo"></i>
+                </a>
+
+                <a class="menu-icon" href="html/login.html" target="_blank">
+                    <i class="icon icon-profile menu-icon-logo"></i>
+                </a>
+            </div>
+        </header>
+        <!-- header for desktop  -->
+
+
+        <!-- header for mobile phone (menu icon will appear, top nav is hidden)  -->
+        <header class="head" id="mobile">
+            <div class="m-pages menu-icon">
+                <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+            </div>
+
+            <a class="logo m-logo" href="">
+                <img class="logo-image" src="images/logo.png" alt="logo"/>
+            </a>
+            
+            <div class="menu m-menu">
+                <a class="menu-icon" href="html/cart.html">
+                    <i class="icon icon-cart menu-icon-logo"></i>
+                </a>
+
+                <a class="menu-icon" href="html/login.html">
+                    <i class="icon icon-profile menu-icon-logo"></i>
+                </a>
+            </div>
+        </header>
+        <!-- header for mobile phone (menu icon will appear, top nav is hidden)  -->
+
+
+        <script>
+            hide(document.querySelectorAll('#main'));
+            hide(document.querySelectorAll('#mobile-bar'))
+
+            window.addEventListener('load', (event) => {
+                hide(document.querySelectorAll('.loader'))
+                show(document.querySelectorAll('#main'));
+                show(document.querySelectorAll('#mobile-bar'));
+              });
+              
+        </script>
+
+<!-- -----------------------------------------------top bar------------------------------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------------slide show------------------------------------------------------------------------- -->
+
+        <div class="slide-show">
+            <div class="slide">
+                <div class="slide-text">
+                    <h2>Your  dream  home  starts right here</h2>
+                    <p>Design your dream home will give you wonderful ideas to make your home unique, beautiful and relaxing.</p>
+                </div>
+                <img class="slide-image" src="images/index/slide1.jpg" alt="slide1" />
+            </div>
+    
+            <div class="slide">
+                <div class="slide-text">
+                    <h2>Redesigning your dining room</h2>
+                    <p>Experience a better way to redecorate or completely reimagine your dining room.
+                    </p>
+                </div>
+                <img class="slide-image" src="images/index/slide2.jpg" alt="slide2" />
+            </div>
+    
+            <div class="slide">
+                <div class="slide-text">
+                    <h2>Enjoy a comfortable sleep</h2>
+                    <p>This duvet cover and pillowcase are made of 100% cotton that helps your child stay at a comfortable dreams.</p>
+                </div>
+                <img class="slide-image" src="images/index/slide3.jpg" alt="slide3" />
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="current_slide(1)"></span> 
+            <span class="dot" onclick="current_slide(2)"></span> 
+            <span class="dot" onclick="current_slide(3)"></span> 
+        </div>
+    </div>
+
+<!-- -----------------------------------------------slide show------------------------------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------------division start----------------------------------------------------------------- -->
+
+    <div class="content-title">
+        <h1>All-Time Favourites</h1>
+    </div>
+    
+    <section class="content-wrapper">
+    
+        <div class="content">
+            <div class="content-image">
+                <img src="images/index/mainSofa.png" alt="sofa" />
+            </div>
+
+            <div class="content-description">
+                <h2>No.1 Best Selling Sofa</h2>
+                <p>Take a sit comfortably</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-image">
+                <img src="images/index/mainMattress.png" alt="mattress" />
+            </div>
+
+            <div class="content-description">
+                <h2>King Size Hard Mattress</h2>
+                <p>Support Body Weight Up To 300kg</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-image">
+                <img src="images/index/mainTable.png" alt="table" />
+            </div>
+
+            <div class="content-description">
+                <h2>Marble Dinning Table</h2>
+                <p>A Symbol Of Luxury For Centuries</p>
+            </div>
+        </div>
+
+    </section>
+
+<!-- -----------------------------------------------division end----------------------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------------division start----------------------------------------------------------------- -->
+
+    <section class="content-wrapper-2">
+        <div class="store-image">
+            <img src="images/index/ikeanstore.jpg" alt="iamge">
+        </div>
+
+        <div class="store-text">
+            <h2>IKEAN STORE</h2>
+            <hr style="border: 0.1px solid; border-radius: 5px;">
+            <p>Welcome to IKEAN, where you will always find affordable furniture, stylish home décor and innovative modern home solutions, as well as design inspiration and unique home ideas!</p>
+            <br>
+            <a class="store-text-link" href="#shop-now"><span>Shop Now</span> </a>
+        </div>
+        
+    </section>
+
+<!-- -----------------------------------------------division end----------------------------------------------------------------- -->
+
+
+
+<!-- -----------------------------------------------division start----------------------------------------------------------------- -->
+
+    <div class="video">
+        <video controls>
+            <source src="videos/ikeanfurniture.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-text">
+            <h3>Make room to move </h3>
+            <p>Finding time to stretch out gets easier if you can do it right at home. Having a plan for creating an open surface also 
+               helps a lot. With furniture that's lightweight or can be rolled out of the way, clearing enough space is done quick and easy.</p>
+        </div>
+    </div>
+
+<!-- -----------------------------------------------division end----------------------------------------------------------------- -->
+
+    
+
+<!-- -----------------------------------------------division start----------------------------------------------------------------- -->
+
+    <section class="content-wrapper-3">
+
+        <h2>We Provide Almost Everything You Need</h2>
+
+        <div class="store-row">
+
+            <div id="shop-now" class="store-column">
+              <a href="html/living_room.html" target="_blank"><div class="shop">
+                    <img src="images/index/livingroom.jpg" alt="living room" />
+                    <h3>Living Room</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div></a>
+            </div>
+
+            <div class="store-column">
+              <a href="html/kitchen.html" target="_blank"><div class="shop">
+                    <img src="images/index/kitchen.jpg" alt="kitchen" />
+                    <h3>Kitchen</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div></a>
+            </div>
+
+            <div class="store-column">
+              <a href="html/bedroom.html" target="_blank"><div class="shop">
+                    <img src="images/index/bedroom.jpg" alt="bedroom" />
+                    <h3>Bedroom</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div></a>
+            </div>
+
+            <div class="store-column">
+              <a href="html/bathroom.html" target="_blank"><div class="shop">
+                    <img src="images/index/bathroom.jpg" alt="bathroom" />
+                    <h3>Bathroom</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              </div></a>
+            </div>
+
+            <div class="store-column">
+                <a href="html/kidsbedroom.html" target="_blank"><div class="shop">
+                    <img src="images/index/kidsbedroom.jpg" alt="kidsbedroom" />
+                    <h3>Kids Bedroom</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div></a>
+              </div>
+
+              <div class="store-column">
+                <a href="html/others.html" target="_blank"><div class="shop">
+                    <img src="images/index/others.jpg" alt="others" />
+                    <h3>Others</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div></a>
+              </div>
+          </div>
+    </section>
+
+<!-- -----------------------------------------------division end----------------------------------------------------------------- -->
+
+
+
+    <footer>
+        <div class="foot-top-img">
+            <a href="#desktop"><img class="logo-image" src="images/logo.png" alt="logo"/></a>
+        </div>
+
+        <div class="footer">
+            <nav class="foot-top-text">
+                <ul>
+                    <span class="bold-text"><li><a href="">The Store</a></li></span><br/> 
+                    <li><a href="">Home</a></li>
+                </ul>
+             </nav>
+    
+             <nav class="foot-top-text">
+                <ul>                
+                    <span class="bold-text"><li><a href="html/about_us.html">About Us</a></li></span><br/> 
+                    <li><a href="html/about_us.html">About</a></li>
+                </ul>
+             </nav>
+    
+             <nav class="foot-top-text">
+                <ul>
+                   <span class="bold-text"><li><a href="html/services.html">Services</a></li></span><br/>
+                   <li><a href="html/delivery.html">Delivery</a></li>
+                   <li><a href="html/assembly.html">Assembly</a></li>
+                   <li><a href="html/cleaning.html">Cleaning</a></li>
+                   <li><a href="html/secondhand.html">Sencond Hand Furniture</a></li>
+                   <li><a href="html/finance.html">Finance</a></li>
+                </ul>
+             </nav>
+    
+             <nav class="foot-top-text">
+                <ul>
+                   <span class="bold-text"><li><a href="#shop-now">Shop</a></li></span><br/>
+                   <li><a href="html/living_room.html">Living Room</a></li>
+                   <li><a href="html/bedroom.html">Bedroom</a></li>
+                   <li><a href="html/kitchen.html">Kitchen</a></li>
+                   <li><a href="html/bathroom.html">Bathroom</a></li>
+                   <li><a href="html/kids_bedroom.html">Kids Bedroom</a></li>
+                   <li><a href="html/others.html">Others</a></li>
+                </ul>
+             </nav>
+        </div>
+
+    </footer>
 
 </body>
-
 </html>
