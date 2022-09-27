@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/index_styles.css" rel="stylesheet" />
+        <link href="../css/cart.css" rel="stylesheet" />
+    
+        <script src="../javascript/script.js"></script>
+        <script defer src="../javascript/room.js"></script>
+    
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+       
+        <link href="../images/service/checkout.png"/>
+    
+        <title>Shopping Cart</title>
+    
+    </head>
+    
+    <body onresize="on_reload()" onload="on_ready()">
+    
+        <div class="loader"><img src="../images/loader.gif"></div>
+        
+        <div id="mobile-bar">
+            <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+            <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+            <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+            <a class="menu-pages-item menu-pages-select" href="about_us.html">About</a>
+            <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+        </div>
+    
+        <div id="main">
+            <!-- -----------------------top bar--------------------------- -->
+            <header class="head" id="desktop">
+                
+                <div class="logo">
+                    <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+    
+                <nav class="pages" id="pages">
+                    <a id="home" class="directory directory-link" href="../index.html"></a>
+                    <a id="services" class="directory directory-link" href="services.html"></a>
+                    <a id="about" class="directory directory-link" href="about_us.html"></a>
+                    <a id="contact" class="directory directory-link" href="contact.html"></a>
+                </nav>
+    
+                <div class="menu">
+                    <a class="menu-icon" href="">
+                        <i class="icon icon-cart menu-icon-locate"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+    
+            <header class="head" id="mobile">
+                <div class="m-pages menu-icon">
+                    <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+                </div>
+    
+                <a class="logo m-logo" href="">
+                    <img class="logo-image" src="../images/logo.png" alt="logo"/>
+                </a>
+                
+                <div class="menu m-menu">
+                    <a class="menu-icon" href="">
+                        <i class="icon icon-cart menu-icon-locate"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- -----------------------top bar--------------------------- -->
+            <script>
+                hide(document.querySelectorAll('#main'));
+                hide(document.querySelectorAll('#mobile-bar'))
+    
+                window.addEventListener('load', (event) => {
+                    hide(document.querySelectorAll('.loader'))
+                    show(document.querySelectorAll('#main'));
+                    show(document.querySelectorAll('#mobile-bar'));
+                  });
+                  
+            </script>
+        </div>
+
+
+        <h1>SHOPPING CART</h1>
+        <hr>
+
+        <div class="heading">
+            <h3 #first-h3>ITEMS</h3>
+            <h3>QUANTITY</h3>
+            <h3>PRICE</h3>
+        </div>
+
+    <!-- this container's contain is control by room.js -->
+        <div id="container">
+
+        </div>
+    <!-- this container's contain is control by room.js -->
+
+      
+
+        <div class="btn">
+            <input class="button" id="btn-1" type="button" onclick="location.href='../index.html#shop-now';" value="Continue My Shopping" />
+            <input class="button" id="btn-2" type="button" onclick="location.href='payment.html';" value="Checkout" />
+        </div>
+
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+    
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
+                       <li><a href="delivery.html">Delivery</a></li>
+                       <li><a href="assembly.html">Assembly</a></li>
+                       <li><a href="cleaning.html">Cleaning</a></li>
+                       <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                       <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                       <li><a href="living_room.html">Living Room</a></li>
+                       <li><a href="bedroom.html">Bedroom</a></li>
+                       <li><a href="kitchen.html">Kitchen</a></li>
+                       <li><a href="bathroom.html">Bathroom</a></li>
+                       <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                       <li><a href="others.html">Others</a></li>
+                    </ul>
+                 </nav>
+            </div>
+    
+        </footer>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

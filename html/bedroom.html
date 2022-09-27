@@ -1,0 +1,290 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/room.css" rel="stylesheet" />
+    
+        <script src="../javascript/script.js"></script>
+        <script defer src="../javascript/room.js"></script>
+    
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    
+        <title>Bedroom</title>
+    
+    </head>
+
+    <body onresize="on_reload()" onload="on_ready()">
+    
+        <div class="loader"><img src="../images/loader.gif"></div>
+        
+        <div id="mobile-bar">
+            <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+            <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+            <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+            <a class="menu-pages-item menu-pages-select" href="about.html">About</a>
+            <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+        </div>
+    
+        <div id="main">
+            <!-- -----------------------top bar--------------------------- -->
+            <header class="head" id="desktop">
+                
+                <div class="logo">
+                    <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+    
+                <nav class="pages" id="pages">
+                    <a id="home" class="directory directory-link" href="../index.html"></a>
+                    <a id="services" class="directory directory-link" href="services.html"></a>
+                    <a id="about" class="directory directory-link" href="about_us.html"></a>
+                    <a id="contact" class="directory directory-link" href="contact.html"></a>
+                </nav>
+    
+                <div class="menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+    
+            <header class="head" id="mobile">
+                <div class="m-pages menu-icon">
+                    <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+                </div>
+    
+                <a class="logo m-logo" href="">
+                    <img class="logo-image" src="../images/logo.png" alt="logo"/>
+                </a>
+                
+                <div class="menu m-menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- -----------------------top bar--------------------------- -->
+            <script>
+                hide(document.querySelectorAll('#main'));
+                hide(document.querySelectorAll('#mobile-bar'))
+    
+                window.addEventListener('load', (event) => {
+                    hide(document.querySelectorAll('.loader'))
+                    show(document.querySelectorAll('#main'));
+                    show(document.querySelectorAll('#mobile-bar'));
+                  });
+                  
+            </script>
+        </div>
+
+        <div class="top-part">
+            <h1>Furniture for Bedroom</h1>
+            <p>A few improvements in your bedroom can make a big difference, both for falling asleep more easily and getting better sleep 
+               quality. Here are some steps that are well worth taking for your health and well-being.</p>
+        </div><hr style="width: 95%;"/>
+
+
+        <section class="hotspot">
+            <div class="hotspot-image">
+                <img src="../images/index/bedroom.jpg" alt="bedroom" usemap="#furniture"/>
+                <figcaption style="line-height: 40px;"><em>Note: Your devices screen must be greater than 680px for a better experience</em></figcaption>
+            </div>
+    
+            <div class="hotspot-text">
+                <h2>Click The Items</h2>
+                <hr style="border: 0.1px solid; border-radius: 5px;">
+                <p>Find out the items you wish to buy in the images, if there is any, just CLICK the image</p><br/>
+
+                <p style="text-align:center;">OR</p><br/><br/>
+
+                <a class="hotspot-text-link" href="#shop-now"><span>Shop Now</span> </a>
+            </div>
+        </section>
+
+
+        <map name="furniture">
+            <area shape="poly" coords="274,205,340,222,346,272,171,311,162,214" href="#shop-now" alt="bed"/>
+            <area shape="poly" coords="468,194,469,250,452,258,375,235,374,190" href="#10" alt="cupboard"/>
+            <area shape="poly" coords="153,202,142,253,96,261,98,206" href="#8" alt="sidedesk"/>
+            <area shape="poly" coords="265,183,265,207,188,212,186,183" href="#11" alt="pillow"/>
+            <area shape="poly" coords="183,348,136,395,4,396,4,303,20,314,43,309" href="#14" alt="chair"/>
+        </map>
+
+
+        <h2 id="mega">! Mega Sale !</h2>
+
+ 
+<!-------------------------------- hidden in default ------------------------------->
+        <div id="conf-modal" class="modal">
+
+            <div class="modal-content">
+
+            <p>Successfully added this item to cart</p>
+
+            <button id="ok-btn" onclick="close_modal()">OK</button>
+            </div>
+
+        </div>
+<!-------------------------------- hidden in default ------------------------------->
+
+
+        <section id="shop-now" class="gallery">
+
+            <div class="image-gallery">
+                    <img src="../images/rooms/b1.png" alt="b1"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('b1')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b2.png" alt="b2"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b2')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b3.png" alt="b3"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b3')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b4.png" alt="b4"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b4')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b5.png" alt="b5"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b5')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b6.png" alt="b6"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b6')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b7.png" alt="b7"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b7')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="8" src="../images/rooms/b8.png" alt="b8"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b8')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b9.png" alt="b9" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b9')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="10" src="../images/rooms/b10.png" alt="b10"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b10')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="11" src="../images/rooms/b11.png" alt="b11"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b11')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b12.png" alt="b12" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b12')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b13.png" alt="b13" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b13')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="14" src="../images/rooms/b14.png" alt="b14" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b14')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b15.png" alt="b15"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b15')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/b16.png" alt="b16"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('b16')">Add to Cart</button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+    
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href=services.html">Services</a></li></span><br/>
+                       <li><a href="delivery.html">Delivery</a></li>
+                       <li><a href="assembly.html">Assembly</a></li>
+                       <li><a href="cleaning.html">Cleaning</a></li>
+                       <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                       <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                       <li><a href="living_room.html">Living Room</a></li>
+                       <li><a href="bedroom.html">Bedroom</a></li>
+                       <li><a href="kitchen.html">Kitchen</a></li>
+                       <li><a href="bathroom.html">Bathroom</a></li>
+                       <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                       <li><a href="others.html">Others</a></li>
+                    </ul>
+                 </nav>
+            </div>
+            
+        </footer>
+</body>
+</html>

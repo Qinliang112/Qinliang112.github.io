@@ -1,0 +1,290 @@
+<!DOCTYPE >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/room.css" rel="stylesheet" />
+    
+        <script src="../javascript/script.js"></script>
+        <script defer src="../javascript/room.js"></script>
+    
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    
+        <title>Kitchen</title>
+    
+    </head>
+
+    <body onresize="on_reload()" onload="on_ready()">
+    
+        <div class="loader"><img src="../images/loader.gif"></div>
+        
+        <div id="mobile-bar">
+            <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+            <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+            <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+            <a class="menu-pages-item menu-pages-select" href="about.html">About</a>
+            <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+        </div>
+    
+        <div id="main">
+            <!-- -----------------------top bar--------------------------- -->
+            <header class="head" id="desktop">
+                
+                <div class="logo">
+                    <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+    
+                <nav class="pages" id="pages">
+                    <a id="home" class="directory directory-link" href="../index.html"></a>
+                    <a id="services" class="directory directory-link" href="services.html"></a>
+                    <a id="about" class="directory directory-link" href="about_us.html"></a>
+                    <a id="contact" class="directory directory-link" href="contact.html"></a>
+                </nav>
+    
+                <div class="menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+    
+            <header class="head" id="mobile">
+                <div class="m-pages menu-icon">
+                    <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+                </div>
+    
+                <a class="logo m-logo" href="">
+                    <img class="logo-image" src="../images/logo.png" alt="logo"/>
+                </a>
+                
+                <div class="menu m-menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- -----------------------top bar--------------------------- -->
+            <script>
+                hide(document.querySelectorAll('#main'));
+                hide(document.querySelectorAll('#mobile-bar'))
+    
+                window.addEventListener('load', (event) => {
+                    hide(document.querySelectorAll('.loader'))
+                    show(document.querySelectorAll('#main'));
+                    show(document.querySelectorAll('#mobile-bar'));
+                  });
+                  
+            </script>
+        </div>
+
+        <div class="top-part">
+            <h1>Furniture for Kitchen</h1>
+            <p>A modular kitchen is a perfect alternative to a full-scaled kitchen renovation, with just a fraction of the installation effort. 
+               They fit into small places and have ample kitchen worktop space and kitchen storage. Choose between different flexible 
+               modular kitchen units at an affordable price. These freestanding kitchens are modular and can be personalized down to the smallest detail. </p>
+        </div><hr style="width: 95%;"/>
+
+
+        <section class="hotspot">
+            <div class="hotspot-image">
+                <img src="../images/index/kitchen.jpg" alt="kitchen" usemap="#furniture"/>
+                <figcaption style="line-height: 40px;"><em>Note: Your devices screen must be greater than 680px for a better experience</em></figcaption>
+            </div>
+    
+            <div class="hotspot-text">
+                <h2>Click The Items</h2>
+                <hr style="border: 0.1px solid; border-radius: 5px;">
+                <p>Find out the items you wish to buy in the images, if there is any, just CLICK the image</p><br/>
+
+                <p style="text-align:center;">OR</p><br/><br/>
+
+                <a class="hotspot-text-link" href="#shop-now"><span>Shop Now</span> </a>
+            </div>
+        </section>
+
+
+        <map name="furniture">
+            <area shape="poly" coords="360,255,388,291,377,399,194,396,186,289,231,254" href="#13" alt="table"/>
+            <area shape="rect" coords="173,142,429,208" href="#8" alt="top"/>
+            <area shape="poly" coords="473,237,,563,275,566,364,508,371,430,297,435,243" href="#8" alt="right"/>
+            <area shape="poly" coords="41,98,71,111,100,109,142,127,136,132,134,181,146,184,151,323,45,395" href="#6" alt="left"/>
+        </map>
+
+
+        <h2 id="mega">! Mega Sale !</h2>
+
+        
+<!-------------------------------- hidden in default ------------------------------->
+        <div id="conf-modal" class="modal">
+
+            <div class="modal-content">
+
+            <p>Successfully added this item to cart</p>
+
+            <button id="ok-btn" onclick="close_modal()">OK</button>
+            </div>
+
+        </div>
+<!-------------------------------- hidden in default ------------------------------->
+
+
+        <section id="shop-now" class="gallery">
+
+            <div class="image-gallery">
+                    <img src="../images/rooms/k1.png" alt="k1"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('k1')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k2.png" alt="k2" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k2')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k3.png" alt="k3"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k3')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k4.png" alt="k4"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k4')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k5.png" alt="k5"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k5')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="6" src="../images/rooms/k6.png" alt="k6"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k6')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k7.png" alt="k7"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k7')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="8" src="../images/rooms/k8.png" alt="k8"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k8')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k9.png" alt="k9"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k9')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k10.png" alt="k10"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k10')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k11.png" alt="k11"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k11')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k12.png" alt="k12" height="300px"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k12')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img id="13" src="../images/rooms/k13.png" alt="k13"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k13')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k14.png" alt="k14"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k14')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k15.png" alt="k15"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k15')">Add to Cart</button>
+            </div>
+
+            <div class="image-gallery">
+                <img src="../images/rooms/k16.png" alt="k16"/>
+                <h3>RM 99.99</h3>
+                <button onclick="show_modal(); add_stock('k16')">Add to Cart</button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+    
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href=services.html">Services</a></li></span><br/>
+                       <li><a href="delivery.html">Delivery</a></li>
+                       <li><a href="assembly.html">Assembly</a></li>
+                       <li><a href="cleaning.html">Cleaning</a></li>
+                       <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                       <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                       <li><a href="living_room.html">Living Room</a></li>
+                       <li><a href="bedroom.html">Bedroom</a></li>
+                       <li><a href="kitchen.html">Kitchen</a></li>
+                       <li><a href="bathroom.html">Bathroom</a></li>
+                       <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                       <li><a href="others.html">Others</a></li>
+                    </ul>
+                 </nav>
+            </div>
+            
+        </footer>
+</body>
+</html>

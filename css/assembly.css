@@ -1,0 +1,52 @@
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 11%;
+  } 
+  
+  .top-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    }
+  
+  .top-p {  
+    width: 60%;
+  }
+  
+  .bot-p {
+    width: 90%;
+  }
+  
+  .top-logo h1 {
+    font-family: BigFont;
+    text-decoration: underline;
+    margin-left: 1em;
+  }
+  
+  .top-p, .bot-p {
+    font-family: SmallFont;
+    font-size: 1.4em;
+    font-weight: 800;
+  }
+
+h1 {
+    font-size: 2.5em;
+    padding-top: 0.7em;
+    padding-left: 2em;
+    text-decoration: underline;
+}
+
+img {
+    width: 25%;
+    padding-left: 3em;
+}
+
+p {
+    padding-left: 7.5em;
+}

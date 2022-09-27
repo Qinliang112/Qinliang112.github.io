@@ -1,0 +1,61 @@
+
+
+h1 {
+    text-align: center;
+    font-family: BigFont;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+legend {
+    background-color: brown;
+    color: white;
+}
+
+.ps, .pm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    background-color: rgb(254, 204, 204);
+}
+
+.ps div{
+    padding: 5px;
+}
+
+.ps div label {
+    font-size: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ps div input, .ps div textarea, .pm div input, .pm div select {
+    background-color: rgb(234, 224, 229);
+    height: 20px;
+    border-radius: 5px;
+}
+
+
+#btn {
+    width: 70%;
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#h3 {
+    text-align: center;
+    margin: 8%;
+    font-size: 1.8em;
+}
+
+
+

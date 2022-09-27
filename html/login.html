@@ -1,0 +1,223 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/login.css" rel="stylesheet" />
+
+        <script src="../javascript/script.js"></script>
+
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+
+        <title>Login</title>
+
+    </head>
+
+    <body onresize="on_reload()" onload="on_ready()">
+
+        <div class="loader"><img src="../images/loader.gif"></div>
+        
+        <div id="mobile-bar">
+            <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+            <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+            <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+            <a class="menu-pages-item menu-pages-select" href="about_us.html">About</a>
+            <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+        </div>
+
+        <div id="main">
+            <!-- -----------------------top bar--------------------------- -->
+            <header class="head" id="desktop">
+                
+                <div class="logo">
+                    <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+
+                <nav class="pages" id="pages">
+                    <a id="home" class="directory directory-link" href="../index.html"></a>
+                    <a id="services" class="directory directory-link" href="services.html"></a>
+                    <a id="about" class="directory directory-link" href="about_us.html"></a>
+                    <a id="contact" class="directory directory-link" href="contact.html"></a>
+                </nav>
+
+                <div class="menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-locate"></i>
+                    </a>
+                </div>
+            </header>
+
+            <header class="head" id="mobile">
+                <div class="m-pages menu-icon">
+                    <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+                </div>
+
+                <a class="logo m-logo" href="cart.html">
+                    <img class="logo-image" src="../images/logo.png" alt="logo"/>
+                </a>
+                
+                <div class="menu m-menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-locate"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- -----------------------top bar--------------------------- -->
+            <script>
+                hide(document.querySelectorAll('#main'));
+                hide(document.querySelectorAll('#mobile-bar'))
+
+                window.addEventListener('load', (event) => {
+                    hide(document.querySelectorAll('.loader'))
+                    show(document.querySelectorAll('#main'));
+                    show(document.querySelectorAll('#mobile-bar'));
+                });
+                
+            </script>
+
+        </div>
+
+        <div class="container-wrap">
+
+            <div class="container">
+                <form class="form">
+                    <h1 class="title">Login</h1>
+                
+                    <div class="form-input">
+                        <input type="text" id="username" placeholder="Username or email">
+                        
+                    </div>
+                    <div class="form-input">
+                        <input type="password"  id="password" placeholder="Password">
+                        
+                    </div>
+                    <button class="form-button" id="login" type="submit">Log in</button>
+                
+                    <p class="form-text">
+                        <a class="form-link" href="">Don't have an account? Create account</a>
+                    </p>
+                </form>
+            </div>
+
+
+            <div class="container">
+                <form class=" form--hidden">
+                    <h1 class="title">Create Account</h1>
+                
+                    <div class="form-input">
+                        <input type="text" id="Username" placeholder="Username">
+                        
+                    </div>
+
+                    <div class="form-input">
+                        <input type="text"  id="Email" placeholder="Email Address">
+                        
+                    </div>
+                    <div class="form-input">
+                        <input type="password" id="password1" placeholder="Password">
+                        
+                    </div>
+                    
+                    <button class="form-button" type="submit">Continue</button>
+                    <p class="form-text">
+                        <a class="form-link" href="">Already have an account? Sign in</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>    
+
+        <h2 id="h2">OR</h2>
+
+        <div class="member-wrap">
+            <div class="member same">
+                <h3>Become a member of IKEAN NOW</h3>
+                <p>As a member you always deserve more</p>
+                <hr style="width:100%;"/>
+                
+                <p>Receive exclusive emails with the latest offers, inspirations, news and sneak peaks and much more. Make sure your contact 
+                   information is up-to-date so you don't miss out on all the fun!</p>
+
+                <a class="member-link" href="member.html"><span>Join Member</span> </a>
+
+            </div>
+
+            <div class="join same">
+                <h3>Join Us NOW</h3>
+                <p>Become one of our staff today</p>
+                <hr style="width:100%;"/>
+
+                <p>Applying and interviewing for a new job can be a bit confusing and stressful. So, here are the answers to some 
+                   frequently asked questions that will hopefully make things easier and help you relax and be yourself.</p>
+
+                <a class="member-link" href="join_us.html"><span>Apply Now</span> </a>
+
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="foot-top-text">
+                    <ul>
+                    <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="assembly.html">Assembly</a></li>
+                    <li><a href="cleaning.html">Cleaning</a></li>
+                    <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                    <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="foot-top-text">
+                    <ul>
+                    <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                    <li><a href="living_room.html">Living Room</a></li>
+                    <li><a href="bedroom.html">Bedroom</a></li>
+                    <li><a href="kitchen.html">Kitchen</a></li>
+                    <li><a href="bathroom.html">Bathroom</a></li>
+                    <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                    <li><a href="others.html">Others</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+

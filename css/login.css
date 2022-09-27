@@ -1,0 +1,153 @@
+
+
+.container-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color:white;
+    border: 1px solid black;
+}
+
+.container,
+.form-input input,
+.form-button {
+    font: 500 1rem 'Quicksand', sans-serif;
+} 
+
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+.form-input {
+    margin-bottom: 1rem;
+}
+
+.form-input input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+
+}
+
+.form-input input{
+    border-color: #009579;
+    background: #ffffff;
+}
+
+
+.form-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    background: #009579;
+}
+
+.form-button:hover {
+    background: #007f67;
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}
+
+.form-text {
+    text-align: center;
+}
+
+.form-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-link {
+    text-decoration: underline;
+} 
+
+#h2 {
+    text-align: center;
+    text-decoration: underline  ;
+    margin: 5%;
+}
+
+.member-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 92%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.same {
+    height: 400px;
+    width: 45%
+}
+
+.same p {
+    text-align: center;
+    font-family: SmallFont;
+}
+
+.member {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-link {
+    padding: 10px 20px;
+    background-color:#ff4d4d;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.member-link:hover {
+    width: 20%;
+}

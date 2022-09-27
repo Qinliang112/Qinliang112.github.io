@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/join_us.css" rel="stylesheet" />
+        <link href="../css/joinforms.css" rel="stylesheet" />
+    
+        <script src="../javascript/script.js"></script>
+    
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title >Join us</title>
+</head>
+
+<body onresize="on_reload()" onload="on_ready()">
+    
+    <div class="loader"><img src="../images/loader.gif"></div>
+    
+    <div id="mobile-bar">
+        <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+        <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+        <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+        <a class="menu-pages-item menu-pages-select" href="about_us.html">About</a>
+        <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+    </div>
+
+    <div id="main">
+        <!-- -----------------------top bar--------------------------- -->
+        <header class="head" id="desktop">
+            
+            <div class="logo">
+                <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+
+            <nav class="pages" id="pages">
+                <a id="home" class="directory directory-link" href="../index.html"></a>
+                <a id="services" class="directory directory-link" href="services.html"></a>
+                <a id="about" class="directory directory-link" href="about_us.html"></a>
+                <a id="contact" class="directory directory-link" href="contact.html"></a>
+            </nav>
+
+            <div class="menu">
+                <a class="menu-icon" href="cart.html">
+                    <i class="icon icon-cart menu-icon-logo"></i>
+                </a>
+
+                <a class="menu-icon" href="login.html">
+                    <i class="icon icon-profile menu-icon-logo"></i>
+                </a>
+            </div>
+        </header>
+
+        <header class="head" id="mobile">
+            <div class="m-pages menu-icon">
+                <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+            </div>
+
+            <a class="logo m-logo" href="cart.html">
+                <img class="logo-image" src="../images/logo.png" alt="logo"/>
+            </a>
+            
+            <div class="menu m-menu">
+                <a class="menu-icon" href="cart.html">
+                    <i class="icon icon-cart menu-icon-logo"></i>
+                </a>
+
+                <a class="menu-icon" href="login.html">
+                    <i class="icon icon-profile menu-icon-logo"></i>
+                </a>
+            </div>
+        </header>
+        <!-- -----------------------top bar--------------------------- -->     
+        <script>
+            hide(document.querySelectorAll('#main'));
+            hide(document.querySelectorAll('#mobile-bar'))
+
+            window.addEventListener('load', (event) => {
+                hide(document.querySelectorAll('.loader'))
+                show(document.querySelectorAll('#main'));
+                show(document.querySelectorAll('#mobile-bar'));
+              });
+
+        </script>
+    </div>
+
+    <h1>Job Occupation</h1>
+
+    <div class="job-row">
+            <div class="col" id="col1">
+                <h2>Cleaner</h2>
+                <ul>
+                    <li>Salary: RM800/month</li>
+                    <li>Age: 18 to 50</li>
+                    <li>Work Experience: No</li>
+                    <li>Time: Part/Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col2">
+                <h2>Porter</h2>
+                <ul>
+                    <li>Salary: RM1000/month</li>
+                    <li>Age: 18 to 35</li>
+                    <li>Work Experience: No</li>
+                    <li>Time: Part/Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col3">
+                <h2>Repairman</h2>
+                <ul>
+                    <li>Salary: RM1200/month</li>
+                    <li>Age: 24 to 45</li>
+                    <li>Work Experience: 1 years</li>
+                    <li>Time: Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col4">
+                <h2>Deliver</h2>
+                <ul>
+                    <li>Salary: RM1500/month</li>
+                    <li>Age: 24 to 35</li>
+                    <li>Work Experience: 1 years</li>
+                    <li>Time: Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col5">
+                <h2>Salesman</h2>
+                <ul>
+                    <li>Salary: RM2000/month</li>
+                    <li>Age: 24 to 30</li>
+                    <li>Work Experience: 2 years</li>
+                    <li>Time: Part/Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col6">
+                <h2>Cashier</h2>
+                <ul>
+                    <li>Salary: RM2200/month</li>
+                    <li>Age: 24 to 35</li>
+                    <li>Work Experience: 2 years</li>
+                    <li>Time: Part/Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col7">
+                <h2>Accountant</h2>
+                <ul>
+                    <li>Salary: RM2500/month</li>
+                    <li>Age: 24 to 30</li>
+                    <li>Work Experience: 2 years</li>
+                    <li>Time: Part/Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+
+            <div class="col" id="col8">
+                <h2>Manager</h2>
+                <ul>
+                    <li>Salary: RM3000/month</li>
+                    <li>Age: 25 to 45</li>
+                    <li>Work Experience: 3 years</li>
+                    <li>Time: Full Time</li>
+                </ul>
+                <a href="#form">Apply</a>
+            </div>
+    </div>
+
+
+        <div id="row">  
+            <form action="join_us.html" method="post">
+                <fieldset id="form" class="form">
+                    <legend>Personal Info</legend>
+               
+                    <div id="label">
+                        <label for="namebox">Name:</label>
+                        <input name="namebox" id="namebox" placeholder="Full Name" type="text" required/>
+                    </div>  
+
+                    <div id="label">
+                        <label for="gender">Gender:</label>
+           
+                        <input name="gender" id="male" type="radio" checked/>
+                        <label for="male">Male</label>
+            
+                        <input name="gender" id="female" type="radio" />
+                        <label for="female">Female</label>
+
+                    </div>
+        
+                    <div id="label">
+                        <label for="age">Age(18~50):</label>
+                        <input name="age" id="age" type="number" min="18" max="50" />
+                    </div>
+
+                    <div id="label">
+                        <label for="contactno">Contact Number:</label>
+                        <input name="contactno" id="contactno" placeholder="(nnn) nnn-nnnn" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+                    </div>
+                    
+                    <div id="label">
+                        <label for="email">Email:</label>
+                        <input name="email" id="email" type="email" required/>
+                    </div>
+
+                    <div id="label">
+                        <label for="jobBox">Position:</label>
+                        <select name="job" id="jobBox">
+                            <option value="job">Cleaner</option>  
+                            <option value="job">Porter</option>
+                            <option value="job">Repairman</option>
+                            <option value="job">Deliver</option>
+                            <option value="job">Salesman</option>
+                            <option value="job">Cashier</option>
+                            <option value="job">Accountant</option>
+                            <option value="job">Manager</option>
+                        </select>
+                    </div>
+
+                    <div id="label">
+                        <label for="resume">Resume:</label>
+                        <input name="resume" id="resume" type="file" placeholder="Write your description..."></input>
+                    </div>
+
+                    <div id="label">
+                        <label for="workTime">Time</label>
+                        <input name="Time" id="part" type="radio" checked>
+                        <label for="part">Part Time</label>  
+                        <input name="Time" id="full" type="radio" >
+                        <label for="full">Full Time</label>
+                    </div>
+
+                    <div id="label">
+                        <label for="interview">Interview Time</label>
+                        <input name="inter" id="interview" type="datetime-local" /> 
+                    </div>
+
+                    <div id="label">
+                        <input name="submit" value="Submit" type="submit"/>
+                        <input name="cancel" value="Cancel" type="reset" /> 
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+    
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
+                       <li><a href="delivery.html">Delivery</a></li>
+                       <li><a href="assembly.html">Assembly</a></li>
+                       <li><a href="cleaning.html">Cleaning</a></li>
+                       <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                       <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                 </nav>
+        
+                 <nav class="foot-top-text">
+                    <ul>
+                       <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                       <li><a href="living_room.html">Living Room</a></li>
+                       <li><a href="bedroom.html">Bedroom</a></li>
+                       <li><a href="kitchen.html">Kitchen</a></li>
+                       <li><a href="bathroom.html">Bathroom</a></li>
+                       <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                       <li><a href="others.html">Others</a></li>
+                    </ul>
+                 </nav>
+            </div>
+    
+        </footer>
+
+     
+</body>
+</html>

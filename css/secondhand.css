@@ -1,0 +1,22 @@
+h1{
+    font-size: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    text-decoration: underline;
+}
+
+h3{
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+img {
+    width: 25%;
+    padding-left: 3em;
+}
+
+p {
+    padding-left: 4em;
+    width: 65%;
+    height: auto;
+}

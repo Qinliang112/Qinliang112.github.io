@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 32px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.job-row a {
+    text-decoration: none;
+}
+
+.job-row {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.col {
+    padding: 10% 0;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#col1 {
+    background-color: rgb(214, 201, 201);
+    border: 5px solid rgb(119, 115, 115);
+}
+
+#col2 {
+    background-color: rgb(214, 201, 201);
+    border: 5px solid rgb(119, 115, 115);
+}
+
+#col3 {
+    background-color: rgb(164, 238, 199);
+    border: 5px solid rgb(81, 191, 132);
+}
+
+#col4 {
+    background-color: rgb(164, 238, 199);
+    border: 5px solid rgb(81, 191, 132);
+}
+
+#col5 {
+    background-color: rgb(145, 226, 242);
+    border: 5px solid rgb(39, 176, 192);
+}
+
+#col6 {
+    background-color: rgb(145, 226, 242);
+    border: 5px solid rgb(39, 176, 192);
+}
+
+#col7 {
+    background-color: rgb(145, 226, 242);
+    border: 5px solid rgb(39, 176, 192);
+}
+
+#col8 {
+    background-color: rgb(255, 184, 242);
+    border: 5px solid rgb(195, 85, 169);
+}
+
+.col ul {
+    text-align: left;
+    margin: 10px 0;
+    color: black;
+}
+
+.col ul li {
+    margin: 15px 0;
+}

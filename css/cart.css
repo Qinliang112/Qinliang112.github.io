@@ -1,0 +1,103 @@
+
+
+h1 {
+    text-align: center;
+    font-family: BigFont;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.heading h3:first-child {
+    flex-basis: 500px;
+}
+
+#container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(219, 185, 255, 0.3);
+    border-radius: 30px;    
+}   
+
+.wrapper {
+    display: flex;
+}
+.cart-images {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-width: 50%;
+}
+
+.cart-images img {
+    width: 20%;
+    height: 150px;
+}
+
+.img-text {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}   
+
+.img-text p {
+    text-align: left;
+    font-family: SmallFont;
+    flex-basis: 400px;
+}
+
+.quan {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    padding-left: 15px;
+}
+
+.quan h2:first-child {
+    padding-left: 70px;
+}   
+
+.quan h2:nth-child(2) {
+    margin-left: 100px;
+}
+
+.btn {
+    width: 80%;
+    margin: 30px 0 200px 130px;; 
+    
+}
+
+.button {
+    transition: 1s;
+    background-color: #ff4d4d;
+    color:white;
+    height: 50px;
+    border-radius: 12px;
+    width: 20%;
+}
+#btn-1 {
+    float: left;
+}
+
+#btn-2 {
+    float: right;
+}
+
+.button:hover{
+    background-color: rgb(95, 118, 236);
+}
+
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A furniture web" />
+        <meta name="keywords" content="sofa, table, desk, home, furniture" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link href="../css/common_styles.css" rel="stylesheet" />
+        <link href="../css/about_us.css" rel="stylesheet" />
+    
+        <script src="../javascript/script.js"></script>
+    
+        <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+    
+        <title>Shopping Cart</title>
+    
+    </head>
+    
+    <body onresize="on_reload()" onload="on_ready()">
+    
+        <div class="loader"><img src="../images/loader.gif"></div>
+        
+        <div id="mobile-bar">
+            <i class="icon icon-cancel cancel_bar" onclick="close_bar()"></i>
+            <a class="menu-pages-item menu-pages-select" href="../index.html">Home</a>
+            <a class="menu-pages-item menu-pages-select" href="services.html">Services</a>
+            <a class="menu-pages-item menu-pages-locate" href="">About</a>
+            <a class="menu-pages-item menu-pages-select" href="contact.html">Contact</a>
+        </div>
+    
+        <div id="main">
+            <!-- -----------------------top bar--------------------------- -->
+            <header class="head" id="desktop">
+                
+                <div class="logo">
+                    <a href=""><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+    
+                <nav class="pages" id="pages">
+                    <a id="home" class="directory directory-link" href="../index.html"></a>
+                    <a id="services" class="directory directory-link" href="services.html"></a>
+                    <a id="about" class="directory directory-locate" href=""></a>
+                    <a id="contact" class="directory directory-link" href="contact.html"></a>
+                </nav>
+    
+                <div class="menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+    
+            <header class="head" id="mobile">
+                <div class="m-pages menu-icon">
+                    <i class="icon icon-menu pages-interact" onclick="open_bar()"></i>
+                </div>
+    
+                <a class="logo m-logo" href="cart.html">
+                    <img class="logo-image" src="../images/logo.png" alt="logo"/>
+                </a>
+                
+                <div class="menu m-menu">
+                    <a class="menu-icon" href="cart.html">
+                        <i class="icon icon-cart menu-icon-logo"></i>
+                    </a>
+    
+                    <a class="menu-icon" href="login.html">
+                        <i class="icon icon-profile menu-icon-logo"></i>
+                    </a>
+                </div>
+            </header>
+            <!-- -----------------------top bar--------------------------- -->
+            <script>
+                hide(document.querySelectorAll('#main'));
+                hide(document.querySelectorAll('#mobile-bar'))
+    
+                window.addEventListener('load', (event) => {
+                    hide(document.querySelectorAll('.loader'))
+                    show(document.querySelectorAll('#main'));
+                    show(document.querySelectorAll('#mobile-bar'));
+                  });
+                  
+            </script>
+        </div>
+        <h1 >ABOUT US</h1>
+
+        <div class="a">
+            <p>IKEAN is the market leader in designing and supplying the furniture.We make furniture that comforms to safety requirement  
+                formulated by government.We focus wide range of furniture.Thousand of IKEAN furniture are used throughout Malaysia 
+                and supported by outstanding customer service.</p>
+                
+            <p>At Ikean,we understand 
+                the importance of sustainablilty and ensure their safety during usage.So,we have do many research and experiment every stage
+                from design to assembly The performance of our quality system is continually reviewed through monitoring and measurement of 
+                company performance indicators and regular management reviews.We commited to reduce our impact ot environment.To do so ,we
+                have implemented many environmental effort such as minimizing waste and recycled ,renewable materials,encouraging our customer
+                to operate in the sensitive environmental way.</p> 
+                
+            <p>Apart from that,we also pay attention to the working environment.Every employees 
+                is relaxed when they are working in our working environment.We can pride that there is no problem regarding our environment 
+                exists in our company.Besides that,we also do many survey to confirm the
+                common price for different type of furniture to make sure everyone can afford our furniture.Sometimes,we will do some promotion
+                sales for certain type of furniture.Customer can pay attention to our website . </p>
+        </div>
+        
+
+
+
+        <h2 >OUR MISSION</h2>
+        <p>To supply a modern design furniture that evryone likes</p> 
+        
+        <div class="img">
+            <img src="../images/about/about1.png" alt="abou1"/>
+            <img src="../images/about/about2.png" alt="abou2"/>
+            <img src="../images/about/about3.png" alt="abou3"/>
+            <img src="../images/about/about4.png" alt="abou4"/>
+        </div>
+
+
+        
+        <h2 >OUR PHILOSOPHY</h2>
+        
+        <p>Customer support is our motivation</p>
+        
+    
+
+        <footer>
+            <div class="foot-top-img">
+                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+            </div>
+
+            <div class="footer">
+                <nav class="foot-top-text">
+                    <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="foot-top-text">
+                    <ul>                
+                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                        <li><a href="about_us.html">About</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="foot-top-text">
+                    <ul>
+                    <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="assembly.html">Assembly</a></li>
+                    <li><a href="cleaning.html">Cleaning</a></li>
+                    <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                    <li><a href="finance.html">Finance</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="foot-top-text">
+                    <ul>
+                    <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                    <li><a href="living_room.html">Living Room</a></li>
+                    <li><a href="bedroom.html">Bedroom</a></li>
+                    <li><a href="kitchen.html">Kitchen</a></li>
+                    <li><a href="bathroom.html">Bathroom</a></li>
+                    <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                    <li><a href="others.html">Others</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </footer>    
+</body>
+</html>

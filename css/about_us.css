@@ -1,0 +1,32 @@
+
+h1,h2{
+    color: aliceblue;
+    background-color:black;
+    text-align: center;
+}
+
+p {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.a {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.a p {
+    text-align: justify;
+    font-family: SmallFont;
+    font-size: 1em;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+

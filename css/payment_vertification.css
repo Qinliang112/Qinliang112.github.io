@@ -1,0 +1,45 @@
+
+h1 {
+    font-family: BigFont;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-family: SmallFont;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+form{
+    border: solid  white 8px;
+    border-radius: 15px;
+    text-align: center;
+    background-color:lightblue;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+}
+
+.wrap {
+    margin: auto;
+    padding: 40px 0 0 50px;
+}
+
+.wrap input {
+    width: 40%;
+    height: 30px;
+}
+
+.wrap button {
+    background-color: green;
+    width: 20%;
+    height: 40px;
+    margin:  20px;
+    border-radius: 12px;
+}
+
+.wrap button:hover {
+    opacity: 0.8;
+}
+
