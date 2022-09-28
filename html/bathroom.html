@@ -87,203 +87,205 @@
                   });
                   
             </script>
-        </div>
-
-        <div class="top-part">
-            <h1>Furniture for Bathroom</h1>
-            <p>To make it a bit easier for you to choose bathroom furniture that best fits your needs and your space, we went through our 
-               range and paired up mirrors, cabinets, washstands, sink cabinets and faucets. Scroll down to see the sets we selected 
-               for you. Pick one or find inspiration to design your own.</p>
-        </div><hr style="width: 95%;"/>
 
 
-        <section class="hotspot">
-            <div class="hotspot-image">
-                <img src="../images/index/bathroom.jpg" alt="bathroom" usemap="#furniture"/>
-                <figcaption style="line-height: 40px;"><em>Note: Your devices screen must be greater than 680px for a better experience</em></figcaption>
+            <div class="top-part">
+                <h1>Furniture for Bathroom</h1>
+                <p>To make it a bit easier for you to choose bathroom furniture that best fits your needs and your space, we went through our 
+                range and paired up mirrors, cabinets, washstands, sink cabinets and faucets. Scroll down to see the sets we selected 
+                for you. Pick one or find inspiration to design your own.</p>
+            </div><hr style="width: 95%;"/>
+
+
+            <section class="hotspot">
+                <div class="hotspot-image">
+                    <img src="../images/index/bathroom.jpg" alt="bathroom" usemap="#furniture"/>
+                    <figcaption style="line-height: 40px;"><em>Note: Your devices screen must be greater than 680px for a better experience</em></figcaption>
+                </div>
+
+                <div class="hotspot-text">
+                    <h2>Click The Items</h2>
+                    <hr style="border: 0.1px solid; border-radius: 5px;">
+                    <p>Find out the items you wish to buy in the images, if there is any, just CLICK the image</p><br/>
+
+                    <p style="text-align:center;">OR</p><br/><br/>
+
+                    <a class="hotspot-text-link" href="#shop-now"><span>Shop Now</span> </a>
+                </div>
+            </section>
+
+
+            <map name="furniture">
+                <area shape="poly" coords="258,118,259,17687,171,89,83" href="#8" alt="mirror"/>
+                <area shape="poly" coords="294,187,294,286,91,349,89,190" href="#4" alt="sink"/>
+                <area shape="poly" coords="487,286,444,282,397,286,379,308,377,341,397,397,642,397,642,357" href="#11" alt="bathtub"/>
+            </map>
+
+
+            <h2 id="mega">! Mega Sale !</h2>
+
+
+            <!-------------------------------- hidden in default ------------------------------->
+            <div id="conf-modal" class="modal">
+
+                <div class="modal-content">
+
+                <p>Successfully added this item to cart</p>
+
+                <button id="ok-btn" onclick="close_modal()">OK</button>
+                </div>
+
             </div>
-    
-            <div class="hotspot-text">
-                <h2>Click The Items</h2>
-                <hr style="border: 0.1px solid; border-radius: 5px;">
-                <p>Find out the items you wish to buy in the images, if there is any, just CLICK the image</p><br/>
-
-                <p style="text-align:center;">OR</p><br/><br/>
-
-                <a class="hotspot-text-link" href="#shop-now"><span>Shop Now</span> </a>
-            </div>
-        </section>
+            <!-------------------------------- hidden in default ------------------------------->
 
 
-        <map name="furniture">
-            <area shape="poly" coords="258,118,259,17687,171,89,83" href="#8" alt="mirror"/>
-            <area shape="poly" coords="294,187,294,286,91,349,89,190" href="#4" alt="sink"/>
-            <area shape="poly" coords="487,286,444,282,397,286,379,308,377,341,397,397,642,397,642,357" href="#11" alt="bathtub"/>
-        </map>
+            <section id="shop-now" class="gallery">
 
+                <div class="image-gallery">
+                        <img src="../images/rooms/bath1.png" alt="bath1"/>
+                        <h3>RM 99.99</h3>
+                        <button onclick="show_modal(); add_stock('bath1')">Add to Cart</button>
+                </div>
 
-        <h2 id="mega">! Mega Sale !</h2>
-
-        
-<!-------------------------------- hidden in default ------------------------------->
-        <div id="conf-modal" class="modal">
-
-            <div class="modal-content">
-
-            <p>Successfully added this item to cart</p>
-
-            <button id="ok-btn" onclick="close_modal()">OK</button>
-            </div>
-
-        </div>
-<!-------------------------------- hidden in default ------------------------------->
-
-
-        <section id="shop-now" class="gallery">
-
-            <div class="image-gallery">
-                    <img src="../images/rooms/bath1.png" alt="bath1"/>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath2.png" alt="bath2"/>
                     <h3>RM 99.99</h3>
-                    <button onclick="show_modal(); add_stock('bath1')">Add to Cart</button>
-            </div>
+                    <button onclick="show_modal(); add_stock('bath2')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath2.png" alt="bath2"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath2')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath3.png" alt="bath3"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath3')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath3.png" alt="bath3"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath3')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img id="4" src="../images/rooms/bath4.png" alt="bath4"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath4')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img id="4" src="../images/rooms/bath4.png" alt="bath4"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath4')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath5.png" alt="bath5"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath5')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath5.png" alt="bath5"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath5')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath6.png" alt="bath6"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath6')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath6.png" alt="bath6"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath6')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath7.png" alt="bath7"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath7')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath7.png" alt="bath7"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath7')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img id="8" src="../images/rooms/bath8.png" alt="bath8" height="300px"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath8')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img id="8" src="../images/rooms/bath8.png" alt="bath8" height="300px"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath8')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath9.png" alt="bath9" height="300px"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath9')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath9.png" alt="bath9" height="300px"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath9')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath10.png" alt="bath10"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath10')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath10.png" alt="bath10"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath10')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img id="11" src="../images/rooms/bath11.png" alt="bath11"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath11')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img id="11" src="../images/rooms/bath11.png" alt="bath11"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath11')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath12.png" alt="bath12"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath12')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath12.png" alt="bath12"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath12')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath13.png" alt="bath13"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath13')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath13.png" alt="bath13"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath13')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath14.png" alt="bath14" height="300px"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath14')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath14.png" alt="bath14" height="300px"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath14')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath15.png" alt="bath15"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath15')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath15.png" alt="bath15"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath15')">Add to Cart</button>
-            </div>
+                <div class="image-gallery">
+                    <img src="../images/rooms/bath16.png" alt="bath16"/>
+                    <h3>RM 99.99</h3>
+                    <button onclick="show_modal(); add_stock('bath16')">Add to Cart</button>
+                </div>
 
-            <div class="image-gallery">
-                <img src="../images/rooms/bath16.png" alt="bath16"/>
-                <h3>RM 99.99</h3>
-                <button onclick="show_modal(); add_stock('bath16')">Add to Cart</button>
-            </div>
-
-        </section>
+            </section>
 
 
-        <footer>
-            <div class="foot-top-img">
-                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
-            </div>
-    
-            <div class="footer">
-                <nav class="foot-top-text">
-                    <ul>
-                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
-                        <li><a href="../index.html">Home</a></li>
-                    </ul>
-                 </nav>
-        
-                 <nav class="foot-top-text">
-                    <ul>                
-                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
-                        <li><a href="about_us.html">About</a></li>
-                    </ul>
-                 </nav>
-        
-                 <nav class="foot-top-text">
-                    <ul>
-                       <span class="bold-text"><li><a href=services.html">Services</a></li></span><br/>
-                       <li><a href="delivery.html">Delivery</a></li>
-                       <li><a href="assembly.html">Assembly</a></li>
-                       <li><a href="cleaning.html">Cleaning</a></li>
-                       <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
-                       <li><a href="finance.html">Finance</a></li>
-                    </ul>
-                 </nav>
-        
-                 <nav class="foot-top-text">
-                    <ul>
-                       <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
-                       <li><a href="living_room.html">Living Room</a></li>
-                       <li><a href="bedroom.html">Bedroom</a></li>
-                       <li><a href="kitchen.html">Kitchen</a></li>
-                       <li><a href="bathroom.html">Bathroom</a></li>
-                       <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
-                       <li><a href="others.html">Others</a></li>
-                    </ul>
-                 </nav>
-            </div>
-            
-        </footer>
+            <footer>
+                <div class="foot-top-img">
+                    <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
+
+                <div class="footer">
+                    <nav class="foot-top-text">
+                        <ul>
+                            <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                            <li><a href="../index.html">Home</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="foot-top-text">
+                        <ul>                
+                            <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                            <li><a href="about_us.html">About</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="foot-top-text">
+                        <ul>
+                        <span class="bold-text"><li><a href=services.html">Services</a></li></span><br/>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="assembly.html">Assembly</a></li>
+                        <li><a href="cleaning.html">Cleaning</a></li>
+                        <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="foot-top-text">
+                        <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                        <li><a href="living_room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="kitchen.html">Kitchen</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="kidsbedroom.html">Kids Bedroom</a></li>
+                        <li><a href="others.html">Others</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </footer>
+        </div>
+
 </body>
 </html>
