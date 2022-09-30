@@ -86,188 +86,181 @@
                   });
                   
             </script>
-        </div>
 
 
-        <h1>Quick Checkout</h1>
-        <hr/>
+            <h1>Quick Checkout</h1>
+            <hr/>
 
 
-        <form action="http://www.example.com" method="get">
+            <form action="http://www.example.com" method="get">
 
-            <div class="form">
-                <fieldset class="ps">
-                    <legend>Personal Information</legend>
-                    <div>
-                        <label for="nameBox">First name:</label><br/>
-                        <input name="custname" id="nameBox" placeholder="First name" type="text" required />
-                    </div>
-                    <div>
-                        <label for="nameBox2">Last name:</label><br/>
-                        <input name="custname" id="nameBox2" placeholder="Last name" type="text" required/>
-                    </div>
-    
-                    <div>       
-                        <label for="emailBox">Email:</label><br/>
-                        <input name="custemail" id="emailBox" type="email"  placeholder="sample@sample.com" required/>
-                    </div>       
-                
-                    <div>
-                        <label for="postcodeBox">Postcode:</label><br/>
-                        <input name="custpostcode" id="postcodeBox" type="text" placeholder="01000" required/>
-                    </div>
-    
-                    <div>
-                        <label for="address1Box">Address 1:</label><br/>
-                        <input name="custaddress1" id="address1Box" type="text" placeholder="Street No" required/>
-                    </div>
-                    <div>       
-                        <label for="addressBox">Address 2:</label><br/>
-                        <input name="custaddress" id="addressBox" type="text" required/>
-                    </div>
-    
-                    <div>
-                        <label for="unitBox">Unit No.</label><br/>
-                        <input name="custunit" id="unitBox" type="text"required/>
-                    </div>
+                <div class="form">
+                    <fieldset class="ps">
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="nameBox">First name:</label><br/>
+                            <input name="custname" id="nameBox" placeholder="First name" type="text" required />
+                        </div>
+                        <div>
+                            <label for="nameBox2">Last name:</label><br/>
+                            <input name="custname" id="nameBox2" placeholder="Last name" type="text" required/>
+                        </div>
+
+                        <div>       
+                            <label for="emailBox">Email:</label><br/>
+                            <input name="custemail" id="emailBox" type="email"  placeholder="sample@sample.com" required/>
+                        </div>       
+                    
+                        <div>
+                            <label for="postcodeBox">Postcode:</label><br/>
+                            <input name="custpostcode" id="postcodeBox" type="text" placeholder="01000" required/>
+                        </div>
+
+                        <div>
+                            <label for="address1Box">Address 1:</label><br/>
+                            <input name="custaddress1" id="address1Box" type="text" placeholder="Street No" required/>
+                        </div>
+                        <div>       
+                            <label for="addressBox">Address 2:</label><br/>
+                            <input name="custaddress" id="addressBox" type="text" required/>
+                        </div>
+
+                        <div>
+                            <label for="unitBox">Unit No.</label><br/>
+                            <input name="custunit" id="unitBox" type="text"required/>
+                        </div>
+                                
+                        <div> 
+                            <label for="telBox">Telephone:</label><br/>
+                            <input name="custtel" id="telBox" type="tel" placeholder="+60XXXXXXXXXX" required/>
+                        </div>   
+                        <div>
+                            <label for="remarkBox">Remark:</label><br/>
+                            <textarea name="custremark" id="remarkBox"></textarea>
                             
-                    <div> 
-                        <label for="telBox">Telephone:</label><br/>
-                        <input name="custtel" id="telBox" type="tel" placeholder="+60XXXXXXXXXX" required/>
-                    </div>   
-                    <div>
-                        <label for="remarkBox">Remark:</label><br/>
-                        <textarea name="custremark" id="remarkBox"></textarea>
+                        </div>
+                        <div>
+                            <label for="pBox"></label>
+                            <input name="custshipping" id="pBox" type="checkbox" required>Use for shipping address</input>
+                            
+                        </div>
+                    
+                        <div>
+                            <label for="termsBox"></label>
+                            <input name="custterm" id="termsBox" type="checkbox" required>I have read and agree to the <a href="">Terms and condition</a></input>
+                        </div>
                         
-                    </div>
-                    <div>
-                        <label for="pBox"></label>
-                        <input name="custshipping" id="pBox" type="checkbox" required>Use for shipping address</input>
                         
-                    </div>
-                
-                    <div>
-                        <label for="termsBox"></label>
-                        <input name="custterm" id="termsBox" type="checkbox" required>I have read and agree to the <a href="">Terms and condition</a></input>
-                    </div>
+                    </fieldset>
+
                     
-                    
-                </fieldset>
-    
-                
-                <fieldset class="pm">
-                    <legend>Payment method</legend>
-                    <div>
-                        <label for="paymethodBox">Bank option</label><br/>
-                        <select list="paymethod" id="paymethodBox">
-                            <option value="Select">--Select--</option>
-                            <option value="Affin Bank">Affin Bank Berhad</option>
-                            <option value="AmBank (M)">Affin Bank Berhad</option>
-                            <option value="Alliance Bank Malaysia">Alliance Bank Malaysia</option>
-                            <option value="Bank Islam Malaysia">Bank Islam Malaysia Berhad</option>
-                            <option value="Bank Kerjasama Rakyat Malaysia">Bank Kerjasama Rakyat Malaysia</option>
-                            <option value="Bank Muamalat (Malaysia)">Bank Muamalat (Malaysia)</option>
-                            <option value="CIMB Bank "> CIMB Bank Berhad</option>
-                            <option value="Citibank">Citibank Berhad</option>
-                            <option value="Deutsche Bank (Malaysia)">Deutsche Bank (Malaysia) Berhad</option>
-                            <option value="HSBC BANK Malaysia">HSBC BANK Malaysia Berhad</option>
-                            <option value="Hong Leong Bank">Hong Leong Bank Berhad</option>
-                            <option value="Maybank">Maybank Berhad</option>
-                            <option value="OCBC Bank (Malaysia)">OCBC Bank (Malaysia) Berhad</option>
-                            <option value="RHB Bank">RHB Bank Berhad</option>
-                            <option value="Standard Chartered Bank (Malaysia)">Standard Chartered Bank (Malaysia) Berhad</option>
-                            <option value="Touch n Go eWallet">Touch n Go eWallet</option>
-                            <option value="United Overseas Bank (Malaysia)">United Overseas Bank (Malaysia) Berhad</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="cardnumBox">Card Number</label><br/>
-                        <input type="text" id="cardnumBox" placeholder="0000-0000-0000-0000 " required/>
-                    </div>
-    
-                    <div>
-                        <label for="CCVBOX">CCV</label><br/>
-                        <input type="text" id="CCvBOX" placeholder="XXX" required/>
-                    </div>
-                    <div>
-                        <label for="ExpdBox">Expiration Date</label><br/>
-                        <input type="text" id="ExpdBox"  placeholder="MM/YY"required/>
-                    </div>
-                    <div>
-                        <label for="emailBox1">Email Address</label><br/>
-                        <input name="custemail" id="emailBox1" type="email" />
-                    </div>
-    
-                    <div>
-                        <label for="coupon">Coupon</label><br/>
-                        <input type="text" id="coupon" placeholder="Please enter the code"/>
-                        <input type="button" onclick="location.href=''" value="Apply"/>
-                    </div>
-                    
-                </fieldset>
-            </div>
+                    <fieldset class="pm">
+                        <legend>Payment method</legend>
+                        <div>
+                            <label for="paymethodBox">Bank option</label><br/>
+                            <select list="paymethod" id="paymethodBox">
+                                <option value="Select">--Select--</option>
+                                <option value="Affin Bank">Affin Bank Berhad</option>
+                                <option value="AmBank (M)">Affin Bank Berhad</option>
+                                <option value="Alliance Bank Malaysia">Alliance Bank Malaysia</option>
+                                <option value="Bank Islam Malaysia">Bank Islam Malaysia Berhad</option>
+                                <option value="Bank Kerjasama Rakyat Malaysia">Bank Kerjasama Rakyat Malaysia</option>
+                                <option value="Bank Muamalat (Malaysia)">Bank Muamalat (Malaysia)</option>
+                                <option value="CIMB Bank "> CIMB Bank Berhad</option>
+                                <option value="Citibank">Citibank Berhad</option>
+                                <option value="Deutsche Bank (Malaysia)">Deutsche Bank (Malaysia) Berhad</option>
+                                <option value="HSBC BANK Malaysia">HSBC BANK Malaysia Berhad</option>
+                                <option value="Hong Leong Bank">Hong Leong Bank Berhad</option>
+                                <option value="Maybank">Maybank Berhad</option>
+                                <option value="OCBC Bank (Malaysia)">OCBC Bank (Malaysia) Berhad</option>
+                                <option value="RHB Bank">RHB Bank Berhad</option>
+                                <option value="Standard Chartered Bank (Malaysia)">Standard Chartered Bank (Malaysia) Berhad</option>
+                                <option value="Touch n Go eWallet">Touch n Go eWallet</option>
+                                <option value="United Overseas Bank (Malaysia)">United Overseas Bank (Malaysia) Berhad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cardnumBox">Card Number</label><br/>
+                            <input type="text" id="cardnumBox" placeholder="0000-0000-0000-0000 " required/>
+                        </div>
+
+                        <div>
+                            <label for="CCVBOX">CCV</label><br/>
+                            <input type="text" id="CCvBOX" placeholder="XXX" required/>
+                        </div>
+                        <div>
+                            <label for="ExpdBox">Expiration Date</label><br/>
+                            <input type="text" id="ExpdBox"  placeholder="MM/YY"required/>
+                        </div>
+                        <div>
+                            <label for="emailBox1">Email Address</label><br/>
+                            <input name="custemail" id="emailBox1" type="email" />
+                        </div>
+
+                        <div>
+                            <label for="coupon">Coupon</label><br/>
+                            <input type="text" id="coupon" placeholder="Please enter the code"/>
+                            <input type="button" onclick="location.href=''" value="Apply"/>
+                        </div>
+                        
+                    </fieldset>
+                </div>
 
 
-        </form>
+            </form>
 
-        <button id="btn" onclick="location.href='verification.html';">Place Order</button>
+            <button id="btn" onclick="location.href='verification.html';">Place Order</button>
 
-        <h3 id="h3">THANKS FOR BUYING FROM US, PLEASE COME AGAIN</h3>
+            <h3 id="h3">THANKS FOR BUYING FROM US, PLEASE COME AGAIN</h3>
 
 
 
-        <footer>
-            <div class="foot-top-img">
-                <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
-            </div>
+            <footer>
+                <div class="foot-top-img">
+                    <a href="#desktop"><img class="logo-image" src="../images/logo.png" alt="logo"/></a>
+                </div>
 
-            <div class="footer">
-                <nav class="foot-top-text">
-                    <ul>
-                        <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
-                        <li><a href="../index.html">Home</a></li>
-                    </ul>
-                </nav>
+                <div class="footer">
+                    <nav class="foot-top-text">
+                        <ul>
+                            <span class="bold-text"><li><a href="../index.html#shop-now">The Store</a></li></span><br/> 
+                            <li><a href="../index.html">Home</a></li>
+                        </ul>
+                    </nav>
 
-                <nav class="foot-top-text">
-                    <ul>                
-                        <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
-                        <li><a href="about_us.html">About</a></li>
-                    </ul>
-                </nav>
+                    <nav class="foot-top-text">
+                        <ul>                
+                            <span class="bold-text"><li><a href="about_us.html">About Us</a></li></span><br/> 
+                            <li><a href="about_us.html">About</a></li>
+                        </ul>
+                    </nav>
 
-                <nav class="foot-top-text">
-                    <ul>
-                    <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
-                    <li><a href="delivery.html">Delivery</a></li>
-                    <li><a href="assembly.html">Assembly</a></li>
-                    <li><a href="cleaning.html">Cleaning</a></li>
-                    <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
-                    <li><a href="finance.html">Finance</a></li>
-                    </ul>
-                </nav>
+                    <nav class="foot-top-text">
+                        <ul>
+                        <span class="bold-text"><li><a href="services.html">Services</a></li></span><br/>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="assembly.html">Assembly</a></li>
+                        <li><a href="cleaning.html">Cleaning</a></li>
+                        <li><a href="secondhand.html">Sencond Hand Furniture</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        </ul>
+                    </nav>
 
-                <nav class="foot-top-text">
-                    <ul>
-                    <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
-                    <li><a href="living_room.html">Living Room</a></li>
-                    <li><a href="bedroom.html">Bedroom</a></li>
-                    <li><a href="kitchen.html">Kitchen</a></li>
-                    <li><a href="bathroom.html">Bathroom</a></li>
-                    <li><a href="kids_bedroom.html">Kids Bedroom</a></li>
-                    <li><a href="others.html">Others</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <nav class="foot-top-text">
+                        <ul>
+                        <span class="bold-text"><li><a href="../index.html#shop-now">Shop</a></li></span><br/>
+                        <li><a href="living_room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="kitchen.html">Kitchen</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li><a href="kids_bedroom.html">Kids Bedroom</a></li>
+                        <li><a href="others.html">Others</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-        </footer>
+            </footer>
+        </div>
         
     </body>
-
 </html>
-
-
-
-
-
-
