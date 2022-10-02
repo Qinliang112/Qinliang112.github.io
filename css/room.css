@@ -99,52 +99,6 @@ html {
 
 
 
-@media only screen and (max-width: 800px) {
-
-    .top-part  {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-
-    .top-part  {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .top-part  {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-
-    .top-part  {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-
-    .top-part  {
-        width: 83%;
-    }
-
-    .top-part p {
-        text-align: justify;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-
-    .top-part  {
-        width: 90%;
-    }
-}
-
 #mega {
     text-align: center;
     text-transform: uppercase;
@@ -254,3 +208,61 @@ html {
 }
 
 
+
+@media only screen and (max-width: 800px) {
+
+    .top-part  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .top-part  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .top-part  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .top-part  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .top-part  {
+        width: 83%;
+    }
+
+    .top-part p {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .top-part  {
+        width: 90%;
+    }
+
+    .hotspot {
+        padding: 1%;
+        margin: 1%; 
+        height: 110vh;
+    }
+    .hotspot-text {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+
+}
