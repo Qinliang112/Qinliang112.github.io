@@ -264,5 +264,13 @@ html {
         padding-top: 10px;
     }
 
+    #mega {
+        letter-spacing: 0.15em;
+    }
+
+    .image-gallery {
+        width: 80%;
+        height: 380px;
+    }
 
 }
