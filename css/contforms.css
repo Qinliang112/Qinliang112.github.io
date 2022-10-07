@@ -1,70 +1,70 @@
 
 /* form */
 h2 {
-   font-size: 32px;
-   padding: 30px 0;
-   text-align: center;
-   background-color: aliceblue;
-}
-
-form {
-    display: block;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
-    margin-left: 500px;
-    background-color: rgb(247, 196, 243);
-    border: 3px solid rgb(87, 9, 127);
-}
-
-label {
-    display: block;
-    text-align: left;
-    float: left;
-    clear: left;
-    margin: 5px;
-    width: 200px;
+    font-size: 32px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: aliceblue;
  }
-
- input, select, textarea {
-    display: block;
-    float: left;
-    margin: 5px 0px;
-    width: 200px;
+ 
+ form {
+     display: block;
+     margin: 5% auto;
+     border-radius: 10px;
+     width: 40%;
+     height: 50%;
+     background-color: rgb(247, 196, 243);
+     border: 3px solid rgb(87, 9, 127);
  }
-
- textarea {
-    height: 100px;
+ 
+ label {
+     display: block;
+     text-align: left;
+     float: left;
+     clear: left;
+     margin: 5px;
+     width: 200px;
+  }
+ 
+  input, select, textarea {
+     display: block;
+     float: left;
+     margin: 5px 0px;
+     width: 200px;
+  }
+ 
+  textarea {
+     height: 100px;
+  }
+ 
+  input[type='submit'] {
+     background-color: rgb(71, 150, 223);
+     color: rgb(255, 255, 255);
+     border-radius: 20px;
+     float: none;
+     display: inline;
+     margin-left: 200px;
+     font-size: 1.1em;
+     height: 30px;
+     width: 150px;
+  }
+ 
+ 
+  /* Validate */
+ input#nameBox:focus,
+ input#phoneBox:focus,
+ input#mailBox:focus{
+     background-color: rgb(245, 245, 220);
  }
-
- input[type='submit'] {
-    background-color: rgb(71, 150, 223);
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    float: none;
-    display: inline;
-    margin-left: 200px;
-    font-size: 1.1em;
-    height: 30px;
-    width: 150px;
+ 
+ input#namebox:focus:valid,
+ input#contactno:focus:valid,
+ input#email:focus:valid{
+     background:rgb(220,255,220) url(cbg_okay.png) right/contain no-repeat;
  }
-
-
- /* Validate */
-input#nameBox:focus,
-input#phoneBox:focus,
-input#mailBox:focus{
-    background-color: rgb(245, 245, 220);
-}
-
-input#namebox:focus:valid,
-input#contactno:focus:valid,
-input#email:focus:valid{
-    background:rgb(220,255,220) url(cbg_okay.png) right/contain no-repeat;
-}
-
-input#namebox:focus:invalid,
-input#contactno:focus:invalid,
-input#email:focus:invalid{
-    background:rgb(255,230,230) url(cbg_warning.png) right/contain no-repeat;
-}
+ 
+ input#namebox:focus:invalid,
+ input#contactno:focus:invalid,
+ input#email:focus:invalid{
+     background:rgb(255,230,230) url(cbg_warning.png) right/contain no-repeat;
+ }
