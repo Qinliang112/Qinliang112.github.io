@@ -1,20 +1,21 @@
 
-#img1 {
-    width: 50px;
+.img1 {
+    border-radius: 15px;
+    width: 60px;
     height: 50px;
 }
 
-.media p#word {
-    text-align: left;
+.media p.word {
+    text-align: center;
     color: rgb(26, 18, 106);
 }
 
-.media p#word2 {
+.media p.word2 {
     text-align: center;
 }
 
 .media p {
-    text-align: left;
+    text-align: center;
 }
 
 .media a {
@@ -24,8 +25,7 @@
 
 .media {
     width: 90%;
-    max-width: 1100px;
-    margin: 50px 15%;
+    margin: 8% auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
