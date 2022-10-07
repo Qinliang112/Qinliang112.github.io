@@ -30,3 +30,72 @@ p {
 }
 
 
+/* @media only screen and (max-width: 1200px) {
+
+    .slide-image {
+        height: 500px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .slide-image {
+        height: 450px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .slide-image {
+        height: 400px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .slide-image {
+        height: 350px;
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .slide-image {
+        height: 300px;
+        width: 98%;
+    }
+
+    .slide-text h2 {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .slide-image {
+        height: 250px;
+        width: 98%;
+    }
+
+    .slide-text h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+} */
+
+@media only screen and (max-width: 400px) {
+
+   .a {
+    width: 90%;
+   }
+
+   .img img {
+    width: 80%;
+    padding: 15px;
+   }
+}
+
