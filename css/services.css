@@ -1,4 +1,3 @@
-@charset "UTF-8";
 
 .introduce, .services {
     margin-left: 3%;
@@ -77,4 +76,31 @@
 }
 
 
+@media only screen and (max-width: 400px) {
+
+    .introduce, .services {
+        margin: auto;
+    }
+
+    .introduce {
+        flex-direction: column;
+    }
+
+    .topping-text, .topping {
+        width: 100%;
+    }
+
+    .topping-text, .topping {
+        margin-bottom: 50px;
+    }
+
+    .topping-image {
+        margin: auto;
+        width: 100%;
+    }
+
+    .service {
+        margin: 30px;
+    }
+ }
 
