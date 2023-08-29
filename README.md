@@ -1,7 +1,3 @@
 # Furniture Web
 
-Author : ###
-
-Date :   ###
-
-Filename : `/public/index.html`
+Author : Wong Qin Liang
